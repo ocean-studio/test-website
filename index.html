@@ -19,35 +19,34 @@
     
     <!---header section--->
     <header>
-        <a href="#" class="logo">
+        <a href="" class="logo">
             <img src="img/logo.png" style="width: 100px; height: 50px;">
         </a>
         
         <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><div class="btntohome"><a>Главная</a></div></li>
+            <li><div class="btntoprod"><a>Продукция</a></div></li>
+            <li><div class="btntoblog"><a>Новости</a></div></li>
         </ul>
         
         <div class="h-icons">
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bx-phone"></i></a>
-            <a href="#"><i class="bx bxl-telegram"></i></a>
+            <a href="https://t.me/melnyk_psy_dnepr"><i class="bx bxl-instagram"></i></a>
+            <a href="https://t.me/ValentynaMelnyk_psy_Dnepr"><i class="bx bxl-telegram"></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
     
     <!---home section--->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-text">
             <h1>Become a better persone<br> than you are</h1>
             <p>Lorem ipsum dolor sit amet <br> con adipisicing elit sed</p>
-            <a href="#" class="btn">Buy Book</a>
+            <div class="btntoprod2"><a class="btn">КУПИТЬ КНИГУ</a></div>
         </div>
     </section>
     
     <!---banner section--->
+    <!---
     <section class="banner">
         <div class="banner-img">
             <img src="img/logo.png">
@@ -61,62 +60,45 @@
             <img src="img/logo.png">
         </div>
     </section>
+    --->
     
     <!---new product section--->
-    <section class="new product">
+    <section class="new product" id="new-product">
         <div class="center-text">
-            <h2>OUR PRODUCTS</h2>
+            <h2>НАША ПРОДУКЦИЯ</h2>
         </div>
         
         <div class="new-content">
             <div class="row">
-                <img src="img/1.png">
-                <h4>30 DATES WITH YOURSELF</h4>
-                <h5>$1.00</h5>
-                <div class="top">
-                    <p>new</p>
+                <div class="selection__button selection__button1">
+                    <img src="img/product-1.png">
+                    <h4>30 СВИДАНИЙ С СОБОЙ</h4>
+                    <h5>$1.00</h5>
+                    <div class="top">
+                        <p>new</p>
+                    </div>
+                    <div class="bbtn">
+                        <a href="#">BUY</a>
+                    </div>
                 </div>
-                <div class="bbtn">
-                    <a href="#">BUY</a>
-                </div>
+                
             </div>
             
             <div class="row">
-                <img src="img/1.png">
-                <h4>30 DATES WITH YOURSELF</h4>
-                <h5>$1.00</h5>
-                <div class="top">
-                    <p>hot</p>
-                </div>
-                <div class="bbtn">
-                    <a href="#">BUY</a>
-                </div>
-            </div>
-            
-            <div class="row">
-                <img src="img/1.png">
-                <h4>30 DATES WITH YOURSELF</h4>
-                <h5>$1.00</h5>
-                <div class="top">
-                    <p>new</p>
-                </div>
-                <div class="bbtn">
-                    <a href="#">BUY</a>
+                <div class="selection__button selection__button2">
+                    <img src="img/product-2.png">
+                    <h4>ЗНАКИ ЗОДИАНА</h4>
+                    <h5>$1.00</h5>
+                    <div class="top">
+                        <p>hot</p>
+                    </div>
+                    <div class="bbtn">
+                        <a href="#">BUY</a>
+                    </div>
                 </div>
             </div>
             
-            <div class="row">
-                <img src="img/1.png">
-                <h4>30 DATES WITH YOURSELF</h4>
-                <h5>$1.00</h5>
-                <div class="top">
-                    <p>hot</p>
-                </div>
-                <div class="bbtn">
-                    <a href="#">BUY</a>
-                </div>
-            </div>
-            
+            <!---
             <div class="row">
                 <img src="img/1.png">
                 <h4>30 DATES WITH YOURSELF</h4>
@@ -164,51 +146,84 @@
                     <a href="#">BUY</a>
                 </div>
             </div>
+            
+            <div class="row">
+                <img src="img/1.png">
+                <h4>30 DATES WITH YOURSELF</h4>
+                <h5>$1.00</h5>
+                <div class="top">
+                    <p>new</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">BUY</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <img src="img/1.png">
+                <h4>30 DATES WITH YOURSELF</h4>
+                <h5>$1.00</h5>
+                <div class="top">
+                    <p>hot</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">BUY</a>
+                </div>
+            </div>
+            --->
         </div>
     </section>
     
     <!---blog section--->
-    <section clas="blog">
+    <section clas="blog" id="blog">
         <div class="center-text">
-            <h2>Latest news</h2>
+            <h2>Последние Новости</h2>
         </div>
         
         <div class="blog-content">
-            <div class="main-box">
-                <div class="box-img">
-                    <img src="img/blog1.jpg">
-                </div>
-                <div class="in-bxx">
-                    <div class="in-text">
-                        <p>May 25, 2023</p>
+            <div class="selection__button selection__button3">
+                <div class="main-box">
+                    <div class="box-img">
+                        <img src="img/blog1.jpg">
                     </div>
+                    <div class="in-bxx">
+                        <div class="in-text">
+                            <p>May 25, 2023</p>
+                        </div>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
                 </div>
-                <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
             </div>
             
-            <div class="main-box">
-                <div class="box-img">
-                    <img src="img/blog1.jpg">
-                </div>
-                <div class="in-bxx">
-                    <div class="in-text">
-                        <p>May 25, 2023</p>
+            
+            <div class="selection__button selection__button4">
+                <div class="main-box">
+                    <div class="box-img">
+                        <img src="img/blog1.jpg">
                     </div>
+                    <div class="in-bxx">
+                        <div class="in-text">
+                            <p>May 25, 2023</p>
+                        </div>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
                 </div>
-                <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
             </div>
             
-            <div class="main-box">
-                <div class="box-img">
-                    <img src="img/blog1.jpg">
-                </div>
-                <div class="in-bxx">
-                    <div class="in-text">
-                        <p>May 25, 2023</p>
+            <div class="selection__button selection__button5">
+                <div class="main-box">
+                    <div class="box-img">
+                        <img src="img/blog1.jpg">
                     </div>
+                    <div class="in-bxx">
+                        <div class="in-text">
+                            <p>May 25, 2023</p>
+                        </div>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
                 </div>
-                <h3>Lorem ipsum dolor sit amet con adipisicing elit sed</h3>
             </div>
+            
         </div>
     </section>
     
@@ -218,7 +233,103 @@
     <div class="end-text">
         <p>ⓒ Books-Shop. All Rights Reserved.</p>
     </div>
-    
+
+    <!---modal selection--->
+    <div class="modal modal1">
+        <div class="modal__main">
+
+            <h2 class="modal__title">Книга: "30 Свиданий с собой"</h2>
+            <div class="modal__container">
+                <h4>Описание:</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi?</p>
+                <h4>Примечание:</h2>
+                <p style="margin-bottom: 10px;">Данный товар является электронной экземпляром. После покупки, электронный экземпляр придет вам на электронную почту, которую вы указываете при оплате.</p>
+                <h4>Цена:</h2>
+                <h4 style="margin-bottom: 10px;">100 UAH</h4>
+            </div>
+
+            <div class="content">
+                <button class="btn_buy" onclick="window.location.href='https://www.youtube.com/watch?v=p7HhHjoWlZo'">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">КУПИТЬ</span>
+                </button>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    <div class="modal modal2">
+        <div class="modal__main">
+
+            <h2 class="modal__title">Книга: "Знаки Зодиака"</h2>
+            <div class="modal__container">
+                <h4>Описание:</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi?</p>
+                <h4>Примечание:</h2>
+                <p style="margin-bottom: 10px;">Данный товар является электронной экземпляром. После покупки, электронный экземпляр придет вам на электронную почту, которую вы указываете при оплате.</p>
+                <h4>Цена:</h2>
+                <h4 style="margin-bottom: 10px;">100 UAH</h4>
+            </div>
+
+            <div class="content">
+                <button class="btn_buy" onclick="window.location.href='https://www.youtube.com/watch?v=p7HhHjoWlZo'">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">КУПИТЬ</span>
+                </button>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    <div class="modal modal3">
+        <div class="modal__main">
+
+            <h2 class="modal__title">Название 1</h2>
+            <div class="modal__container">
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tempore optio suscipit culpa debitis libero atque corrupti earum tenetur, nulla dolorem ullam nesciunt rerum harum! Fugiat quia aperiam, itaque, numquam quasi odio consectetur eius iste autem quis aliquam officiis molestias! Laboriosam ducimus tempora error veritatis ut rem porro at dolore!</p>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    <div class="modal modal4">
+        <div class="modal__main">
+
+            <h2 class="modal__title">Название 1</h2>
+            <div class="modal__container">
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam neque illo deserunt possimus voluptates inventore pariatur ad dicta nemo ab natus, ipsa cumque perferendis perspiciatis sapiente nisi, minima, iste autem facilis. At omnis eaque voluptatibus nam reiciendis debitis dolores perspiciatis libero quod! Nostrum mollitia quia temporibus tenetur excepturi facilis tempora totam deleniti doloremque beatae quidem animi magnam, sed cumque minima expedita et? Libero ipsam eveniet molestiae, incidunt ducimus optio illum labore excepturi. Error alias, iusto mollitia neque tempore nemo voluptate ad explicabo nesciunt optio modi aliquid? Eos consectetur natus voluptatum ullam expedita corrupti. Qui, explicabo, non reiciendis ea facere necessitatibus consequatur commodi voluptatum voluptates dolore temporibus illo dolores! Accusantium eligendi, necessitatibus at, fuga error nemo quia ducimus architecto, veniam praesentium ipsam ex? Nam necessitatibus illo officia dignissimos rerum, culpa ipsam? Suscipit repellendus vero nobis unde repudiandae possimus vel ad iste perspiciatis, officiis ullam, ratione, modi quod atque quo! Delectus esse eveniet eos deserunt laboriosam at quia in. Ipsam accusamus animi repellendus odio repudiandae, beatae incidunt ullam unde, numquam, dicta consectetur deleniti? Eveniet sunt eos numquam, hic odio alias est repellendus iste nemo expedita adipisci delectus, laboriosam ullam! Sunt tempora ducimus maxime! Nobis quam quia nisi aliquam, inventore debitis molestiae magnam. Amet quod molestiae magnam a, dolore corrupti suscipit facilis praesentium nulla omnis excepturi accusantium ullam odit molestias. Officia, odit. At eum eos sit architecto. Exercitationem eaque quam veniam maiores, pariatur eius dicta libero consequuntur ad! Repudiandae nemo magnam explicabo eum recusandae porro, molestias quo provident ut saepe eius, eos magni!</p>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    <div class="modal modal5">
+        <div class="modal__main">
+
+            <h2 class="modal__title">Название 1</h2>
+            <div class="modal__container">
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
+                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias est ad, mollitia sed tenetur, cupiditate quae dignissimos, omnis eius voluptatem incidunt saepe quod et ab autem illum unde consequuntur facilis enim? Cum aspernatur rerum sapiente assumenda, excepturi, dolorum sint pariatur a incidunt illum doloremque? Aperiam provident possimus vel ea fugiat dolores temporibus neque, modi, velit voluptas reiciendis adipisci optio eum eligendi suscipit dicta quam animi qui assumenda quo aliquam! A nam, magnam ab illum adipisci tenetur quos perferendis quam nemo unde numquam aspernatur animi fugit eveniet, minima aliquid voluptatem ipsam doloribus quas? Impedit temporibus illo eligendi accusamus assumenda.</p>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
     
     <!---custom js link--->
 	<script type="text/javascript" src="js/script.js"></script>
