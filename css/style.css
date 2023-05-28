@@ -54,6 +54,7 @@ header{
     font-weight: 500;
     margin: 10px 22px;
     transition: all .50s ease;
+    cursor: pointer;
 }
 
 .navbar a:hover{
@@ -170,7 +171,8 @@ section{
 
 .new-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, auto));*/
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
     align-items: center;
     gap: 2.5rem;
     margin-top: 4.5rem;
@@ -313,6 +315,117 @@ section{
     padding: 12px;
     border-radius: 30px;
 }
+
+/*Modal*/
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal__main{
+    position: relative;
+    max-width: 600px;
+    background-color: azure;
+    margin: auto;
+    color: black;
+    border-radius: 16px;
+    padding: 30px;
+    cursor: default;
+}
+
+.modal__title{
+    margin-bottom: 10px;
+}
+
+.modal__close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;    
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.modal__close:focus-visible{
+    outline-color: green;
+}
+
+/*button_buy*/
+.content{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.btn_buy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background: black;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn_buy span:not(:nth-child(6)){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
+    rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.btn_buy span:nth-child(6){
+    position: relative;
+}
+
+.btn_buy span:nth-child(1){
+    transform: translate(-3.3em, -5em);
+}
+.btn_buy span:nth-child(2){
+    transform: translate(-6em, 2.3em);
+}
+.btn_buy span:nth-child(3){
+    transform: translate(-.2em, 1.8em);
+}
+.btn_buy span:nth-child(4){
+    transform: translate(3.5em, 2.4em);
+}
+.btn_buy span:nth-child(5){
+    transform: translate(3.5em, -4.8em);
+}
+
+.btn_buy:hover span:not(:nth-child(6)){
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}
+
 
 @media (max-width: 1200px){
     header{
