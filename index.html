@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
     <!---header section--->
     <header>
         <a href="" class="logo">
-            <img src="img/logo.png" style="width: 100px; height: 50px;">
+            <img src="img/logo-png.png" style="width: 100px; height: 50px;">
         </a>
         
         <ul class="navbar">
@@ -39,9 +45,9 @@
     <!---home section--->
     <section class="home" id="home">
         <div class="home-text">
-            <h1>Become a better persone<br> than you are</h1>
-            <p>Lorem ipsum dolor sit amet <br> con adipisicing elit sed</p>
-            <div class="btntoprod2"><a class="btn">КУПИТЬ КНИГУ</a></div>
+            <h1>Стань лучше,<br> чем ты есть</h1>
+            <!--<p>Lorem ipsum dolor sit amet <br> con adipisicing elit sed</p>-->
+            <!--<div class="btntoprod2"><a class="btn">КУПИТЬ КНИГУ</a></div>-->
         </div>
     </section>
     
@@ -72,11 +78,11 @@
             <div class="row">
                 <div class="selection__button selection__button1">
                     <img src="img/product-1.png">
-                    <h4>30 СВИДАНИЙ С СОБОЙ</h4>
-                    <h5>$1.00</h5>
-                    <div class="top">
+                    <h4>30 СВИДАНИЙ С СОБОЙ (RUS)</h4>
+                    <h5>650 UAH</h5>
+                    <!---<div class="top">
                         <p>new</p>
-                    </div>
+                    </div>--->
                     <div class="bbtn">
                         <a href="#">BUY</a>
                     </div>
@@ -88,10 +94,24 @@
                 <div class="selection__button selection__button2">
                     <img src="img/product-2.png">
                     <h4>ЗНАКИ ЗОДИАНА</h4>
-                    <h5>$1.00</h5>
-                    <div class="top">
+                    <h5>450 UAH</h5>
+                    <!---<div class="top">
                         <p>hot</p>
+                    </div>--->
+                    <div class="bbtn">
+                        <a href="#">BUY</a>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="selection__button selection__button3">
+                    <img src="img/product-1.png">
+                    <h4>30 ПОБАЧЕНЬ ІЗ СОБОЮ (UKR)</h4>
+                    <h5>650 UAH</h5>
+                    <!---<div class="top">
+                        <p>hot</p>
+                    </div>--->
                     <div class="bbtn">
                         <a href="#">BUY</a>
                     </div>
@@ -159,17 +179,6 @@
                 </div>
             </div>
             
-            <div class="row">
-                <img src="img/1.png">
-                <h4>30 DATES WITH YOURSELF</h4>
-                <h5>$1.00</h5>
-                <div class="top">
-                    <p>hot</p>
-                </div>
-                <div class="bbtn">
-                    <a href="#">BUY</a>
-                </div>
-            </div>
             --->
         </div>
     </section>
@@ -180,8 +189,9 @@
             <h2>Последние Новости</h2>
         </div>
         
+        <!---
         <div class="blog-content">
-            <div class="selection__button selection__button3">
+            <div class="selection__button selection__button50">
                 <div class="main-box">
                     <div class="box-img">
                         <img src="img/blog1.jpg">
@@ -196,7 +206,7 @@
             </div>
             
             
-            <div class="selection__button selection__button4">
+            <div class="selection__button selection__button51">
                 <div class="main-box">
                     <div class="box-img">
                         <img src="img/blog1.jpg">
@@ -210,7 +220,7 @@
                 </div>
             </div>
             
-            <div class="selection__button selection__button5">
+            <div class="selection__button selection__button52">
                 <div class="main-box">
                     <div class="box-img">
                         <img src="img/blog1.jpg">
@@ -225,27 +235,73 @@
             </div>
             
         </div>
+        --->
+
+        <div class="slider-main">
+            <div class="slider middle">
+
+                <div class="slides">
+        
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+
+                    <!---
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    -->
+        
+                    <div class="slide s1"><div class="selection__button selection__button50"><img src="img/blog-1.jpg"></div></div>
+                    <div class="slide"><div class="selection__button selection__button51"><img src="img/blog-2.jpg"></div></div>
+
+                    <!---
+                    <div class="slide"><img src="img/blog1.jpg"></div>
+                    <div class="slide"><img src="img/blog-2.jpg"></div>
+                    -->
+        
+                </div>
+        
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+
+                    <!---
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    -->
+                </div>
+        
+            </div>
+        </div>
+
     </section>
     
     <!---scroll--->
-    <a href="#" class="scroll-top"><i class="bx bx-chevrons-up"></i></a>
+    <div class="btntotop"><a class="scroll-top"><i class="bx bx-chevrons-up"></i></a></div>
     
     <div class="end-text">
         <p>ⓒ Books-Shop. All Rights Reserved.</p>
     </div>
 
     <!---modal selection--->
+
+    <!---Modals Product-->
     <div class="modal modal1">
         <div class="modal__main">
 
             <h2 class="modal__title">Книга: "30 Свиданий с собой"</h2>
             <div class="modal__container">
-                <h4>Описание:</h2>
-                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi?</p>
-                <h4>Примечание:</h2>
-                <p style="margin-bottom: 10px;">Данный товар является электронной экземпляром. После покупки, электронный экземпляр придет вам на электронную почту, которую вы указываете при оплате.</p>
-                <h4>Цена:</h2>
-                <h4 style="margin-bottom: 10px;">100 UAH</h4>
+
+                <h4 style="margin-bottom: 5px;">Описание:</h4>
+                <p style="margin-bottom: 3px;">Рабочая тетрадь «30 свиданий с собой» рассчитана на 30 дней самостоятельной работы и охватывает следующие темы:</p>
+                <p> - Cамооценка;<br> - Уверенность в себе;<br> - Личные границы;<br> - Негативные установки, блоки;<br> - Стремление к идеальности;<br> - Ценности;<br> - Неумение распознавать, чего я хочу;<br> - Управление эмоциями;<br> - Внутренний ребёнок;<br> -обиды;<br> - Ответственность;<br> - Апатия, усталость, тревога; <br> И др.</p>
+                <p style="margin-bottom: 5px; margin-top: 15px;">Мало теории и много практики. Разные упражнения на каждый день.</p>
+                <p style="margin-bottom: 10px;">Практики рекомендую выполнять письменно. Распечатайте эту тетрадь или приобретите красивый блокнот. И планомерно день за днем выполняйте все упражнения.</p>
+
+                <h4 style="margin-bottom: 5px;">Примечание:</h4>
+                <p>Данный товар является электронной экземпляром. <br>После покупки, книга/тетрадь придет вам на электронную почту, которую вы указываете при оплате.</p>
+                
+                <h4 style="margin-top: 15px">Цена:</h4>
+                <h4 style="margin-bottom: 10px;">650 UAH</h4>
             </div>
 
             <div class="content">
@@ -268,12 +324,20 @@
 
             <h2 class="modal__title">Книга: "Знаки Зодиака"</h2>
             <div class="modal__container">
-                <h4>Описание:</h2>
-                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi?</p>
-                <h4>Примечание:</h2>
-                <p style="margin-bottom: 10px;">Данный товар является электронной экземпляром. После покупки, электронный экземпляр придет вам на электронную почту, которую вы указываете при оплате.</p>
-                <h4>Цена:</h2>
-                <h4 style="margin-bottom: 10px;">100 UAH</h4>
+
+                <h4 style="margin-bottom: 5px;">Описание:</h4>
+                    <p>Возможно ли совместить астрологию и психологию?</p>
+                    <p style="margin-bottom: 10px; font-weight: 600;"> - Да, конечно.</p>
+                    <p style="margin-bottom: 5px;">В этой тетрадке-раскраске вы найдете основные сведения о каждом знаке зодиака, некоторые интересные факты. Благодаря чему вы лучше узнаете каждый знак зодиака и посмотрите на себя, своих родственников, друзей, коллег по-новому. </p>
+                    <p style="margin-bottom: 5px;">Также на каждый знак зодиака добавлена раскраска-антистресс. Подобные раскраски относятся к Арт-терапии, которые благотворно влияют на каждого человека. Такие раскраски обладают множеством мелких деталей, и раскрашивая каждую мелочь, человек полностью концентрируется на этом увлекательном занятии, удерживает фокус внимания на рисунке, при этом отбросив на несколько часов все свои мысли. </p>
+                    <p>И конечно же на каждый знак зодиака добавлена психологическая практика.</p>
+                    <p style="margin-bottom: 15px;">Каждая из этих практик будет полезна каждому человеку, не зависимо от того, кто вы по знаку зодиака, так как в каждом человеке есть маленькая часть от каждого знака зодиака.</p>
+                
+                <h4 style="margin-bottom: 5px;">Примечание:</h4>
+                <p>Данный товар является электронной экземпляром. <br>После покупки, книга/тетрадь придет вам на электронную почту, которую вы указываете при оплате.</p>
+                
+                <h4 style="margin-top: 15px">Цена:</h4>
+                <h4 style="margin-bottom: 10px;">450 UAH</h4>
             </div>
 
             <div class="content">
@@ -294,40 +358,169 @@
     <div class="modal modal3">
         <div class="modal__main">
 
-            <h2 class="modal__title">Название 1</h2>
+            <h2 class="modal__title">Книга: "30 побачень із собою"</h2>
             <div class="modal__container">
-                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
-                <p style="margin-bottom: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tempore optio suscipit culpa debitis libero atque corrupti earum tenetur, nulla dolorem ullam nesciunt rerum harum! Fugiat quia aperiam, itaque, numquam quasi odio consectetur eius iste autem quis aliquam officiis molestias! Laboriosam ducimus tempora error veritatis ut rem porro at dolore!</p>
+
+                <h4 style="margin-bottom: 5px;">Опис:</h4>
+                <p style="margin-bottom: 3px;">Робочий зошит «30 побачень із собою» розрахований на 30 днів самостійної роботи та охоплює наступні теми:</p>
+                <p> - Самооцінка;<br> - Впевненість в собі;<br> - Особисті межі;<br> - Негативні установки, блоки;<br> - Прагнення ідеальності;<br> - Цінності;<br> - Невміння розпізнавати, чого хочу;<br> - Управління емоціями;<br> - Внутрішня дитина;<br> - Образи;<br> - Відповідальність;<br> - Апатія, втома, тривога; <br> Та ін.</p>
+                <p style="margin-bottom: 5px; margin-top: 15px;">Мало теорії та багато практики. Різні вправи на кожен день.</p>
+                <p style="margin-bottom: 10px;">Практики рекомендую виконувати письмово. Роздрукуйте цей зошит або придбайте гарний блокнот. І планомірно день за днем виконуйте усі вправи.</p>
+                
+                <h4 style="margin-bottom: 5px;">Примітка:</h4>
+                <p>Данный товар является электронной экземпляром. <br>Після покупки, книга/зошит прийде вам на електронну пошту, яку ви вказуєте під час оплати.</p>
+                
+                <h4 style="margin-top: 15px">Ціна:</h4>
+                <h4 style="margin-bottom: 10px;">650 UAH</h4>
+            </div>
+
+            <div class="content">
+                <button class="btn_buy" onclick="window.location.href='https://www.youtube.com/watch?v=p7HhHjoWlZo'">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <span class="text">КУПИТЬ</span>
+                </button>
             </div>
             
             <button class="modal__close">&#10006;</button>
         </div>
     </div>
 
-    <div class="modal modal4">
-        <div class="modal__main">
 
-            <h2 class="modal__title">Название 1</h2>
+    <!---Modals - BLOG-->
+
+    <div class="modals modal50">
+        <div class="modals__main">
+
+            <h2 class="modal__title">Для чего важно читать книги?</h2>
             <div class="modal__container">
-                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
-                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam neque illo deserunt possimus voluptates inventore pariatur ad dicta nemo ab natus, ipsa cumque perferendis perspiciatis sapiente nisi, minima, iste autem facilis. At omnis eaque voluptatibus nam reiciendis debitis dolores perspiciatis libero quod! Nostrum mollitia quia temporibus tenetur excepturi facilis tempora totam deleniti doloremque beatae quidem animi magnam, sed cumque minima expedita et? Libero ipsam eveniet molestiae, incidunt ducimus optio illum labore excepturi. Error alias, iusto mollitia neque tempore nemo voluptate ad explicabo nesciunt optio modi aliquid? Eos consectetur natus voluptatum ullam expedita corrupti. Qui, explicabo, non reiciendis ea facere necessitatibus consequatur commodi voluptatum voluptates dolore temporibus illo dolores! Accusantium eligendi, necessitatibus at, fuga error nemo quia ducimus architecto, veniam praesentium ipsam ex? Nam necessitatibus illo officia dignissimos rerum, culpa ipsam? Suscipit repellendus vero nobis unde repudiandae possimus vel ad iste perspiciatis, officiis ullam, ratione, modi quod atque quo! Delectus esse eveniet eos deserunt laboriosam at quia in. Ipsam accusamus animi repellendus odio repudiandae, beatae incidunt ullam unde, numquam, dicta consectetur deleniti? Eveniet sunt eos numquam, hic odio alias est repellendus iste nemo expedita adipisci delectus, laboriosam ullam! Sunt tempora ducimus maxime! Nobis quam quia nisi aliquam, inventore debitis molestiae magnam. Amet quod molestiae magnam a, dolore corrupti suscipit facilis praesentium nulla omnis excepturi accusantium ullam odit molestias. Officia, odit. At eum eos sit architecto. Exercitationem eaque quam veniam maiores, pariatur eius dicta libero consequuntur ad! Repudiandae nemo magnam explicabo eum recusandae porro, molestias quo provident ut saepe eius, eos magni!</p>
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h4>
+
+                <p style="margin-bottom: 5px;">Чтение книг имеет огромное значение в жизни человека. В прошлом люди использовали книги для записи и сохранения важных идей и открытий, поэтому они являются ценным источником информации.</p>
+                <p style="margin-bottom: 5px;">Самая первая книга появилась около 5000 лет назад и была написана вручную на папирусе египтянами. Изначально книги были редкими и дорогими, доступными не каждому. С течением времени и развитием технологий процесс издания стал проще, и все больше людей могут позволить себе книги и наслаждаться чтением.</p>
+                <p style="margin-bottom: 5px;">Существует много причин, почему чтение книг является важной занятием. Если вы еще не начали читать, то после прочтения этой статьи вы, возможно, поймете, как много преимуществ оно может принести. Если вам трудно начать читать, попробуйте начать читать по несколько страниц в день.</p>
+                <p style="margin-bottom: 10px;">Даже 15 минут чтения в день помогут развить память и воображение, расширить словарный запас и повысить образованность.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение способствует получению знаний</h4>
+                <p style="margin-bottom: 10px;">Знания - это единственное, что никто никогда не сможет у Вас отнять. Поэтому всегда стоит стремиться к их приобретению, так как они обязательно пригодятся в жизни. Помимо школы, чтение книг является одним из способов получения новых знаний. Лучше изучать различные энциклопедии или книги по интересующим сферам. Однако много интересных фактов можно найти и в художественной литературе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развивает и мыслительные процессы</h4>
+                <p style="margin-bottom: 10px;">Чтение способствует формированию новых нейронных связей в мозгу как у взрослых, так и у детей, что помогает мыслить быстрее и улучшает память. Чтение действительно способствует улучшению памяти, так как требует запоминания событий в книге, а также запоминания имён персонажей, их характеристик и других деталей. Начав читать больше, вы заметите, что легко держите всю информацию в голове, включая самые мелкие детали. Чтение является отличным способом улучшения памяти, даже если вы не замечаете этого. Аудиокниги также оказывают положительное влияние на умственные процессы. Чтение книг также замедляет старение мозга.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развивает воображение и фантазию</h4>
+                <p style="margin-bottom: 10px;">Чтение художественной литературы помогает активизировать новые области мозга и развивает воображение, как показывают исследования Мичиганского университета. В отличие от компьютерных игр, чтение задействует эти области мозга.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение снижает стресс</h4>
+                <p style="margin-bottom: 10px;">В нашей жизни мы постоянно сталкиваемся со стрессовыми ситуациями. Проблемы на работе или в личной жизни могут вызывать чрезмерную тревогу и стресс. Существует несколько методов борьбы со стрессом, таких как физическая активность, достаточный сон и горячая ванна. Чтение книг также может помочь справиться со стрессом. Читая книги, вы можете отвлечься от проблем, которые возникли в течение дня. Найдите тихое место, где вас никто не будет беспокоить, чтобы сосредоточиться на чтении. Это поможет расслабиться и освободить разум от лишних мыслей. Подбирайте только те книги, которые вам нравится читать. Книга также способствует засыпанию быстрее, останавливая поток беспокойных мыслей.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение расширяет словарный запас</h4>
+                <p style="margin-bottom: 10px;">При чтении вы неосознанно запоминаете новые слова, которые затем используете в разговоре. Это также помогает вам улучшить грамотность и лучше понимать речь. Увеличение словарного запаса повышает вашу уверенность в себе и может помочь вам продвинуться по карьерной лестнице. Чем лучше вы можете выразить свои мысли, тем лучшее впечатление вы создаете о себе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение улучшает аналитические способности</h4>
+                <p style="margin-bottom: 10px;">Люди, которые регулярно читают, могут предсказывать и анализировать события в разных книгах. Чтение и отслеживание сюжетов развивает критическое мышление и аналитические навыки. Чем больше вы читаете, тем лучше ваш разум запоминает детали, которые помогают вам анализировать события в других книгах.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение улучшает навыки письма</h4>
+                <p style="margin-bottom: 10px;">Сегодня все больше людей общаются письменно через электронную почту или мобильные сообщения, поэтому развитие навыков письма очень важно. Умение писать тесно связано с развитием словарного запаса. Чем шире ваш словарный запас, тем легче будет выражать свои мысли в письменной форме. Поэтому чтение книг поможет вам в этом процессе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развитие эмпатии</h4>
+                <p style="margin-bottom: 10px;">При чтении книг люди вовлекаются в жизнь персонажей и их переживания. Иногда воображение настолько сильно, что вы можете почувствовать себя на месте главных героев. Чтение таких книг развивает эмпатию и помогает стать более терпимым к другим людям, а также прислушиваться к мнениям окружающих и помогать им в трудных ситуациях, если это необходимо.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение способствует укреплению отношений</h4>
+                <p style="margin-bottom: 10px;">Чтение книг - отличный способ укрепить отношения между родителями и детьми. Личность ребенка формируется в самом раннем детстве, поэтому родителям важно уделять особое внимание своим детям. Если вы хотите, чтобы ваши отношения с ребенком были основаны на уважении, понимании и доверии, то необходимо найти занятия, которые помогут укрепить эти отношения. Чтение книг детям - один из таких способов. В магазинах есть много красивых и интересных книг для детей, среди которых вы обязательно найдете то, что понравится даже самым требовательным детям.</p>
+
+                <h4 style="margin-bottom: 5px">Сколько нужно читать в день?</h4>
+                <p style="margin-bottom: 5px;">Ученые рекомендуют читать 15-30 минут в день (20-30 страниц), уже за это время происходят заметные изменения в мозге. Однако каждый решает сам, сколько времени уделять чтению. Если вы можете уделить час в день на чтение, то эффективность будет только возрастать.</p>
+                <p style="margin-bottom: 10px;">В заключение, стоит отметить, что чтение книг имеет множество преимуществ. Чтение оказывает положительное воздействие на мозг. Для развития мыслительных процессов рекомендуется читать книги различных жанров, при условии, что они вызывают у вас интерес. Оно позволяет приобретать знания, развивать мыслительные процессы, воображение и фантазию, а также снижает уровень стресса. Не стоит стремиться побить рекорд и прочитать больше книг, так как быстрое и поверхностное чтение не принесет результатов. Мы надеемся, что хотя бы несколько причин, перечисленных выше, побудят вас включить чтение книг в вашу повседневную жизнь. Не упускайте возможность насладиться миром, открываемым через страницы книг.</p>
             </div>
             
             <button class="modal__close">&#10006;</button>
         </div>
     </div>
 
-    <div class="modal modal5">
-        <div class="modal__main">
+    <div class="modals modal51">
+        <div class="modals__main">
 
-            <h2 class="modal__title">Название 1</h2>
+            <h2 class="modal__title">Арт-терапия. Что это такое?</h2>
             <div class="modal__container">
-                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h2>
-                <p style="margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias est ad, mollitia sed tenetur, cupiditate quae dignissimos, omnis eius voluptatem incidunt saepe quod et ab autem illum unde consequuntur facilis enim? Cum aspernatur rerum sapiente assumenda, excepturi, dolorum sint pariatur a incidunt illum doloremque? Aperiam provident possimus vel ea fugiat dolores temporibus neque, modi, velit voluptas reiciendis adipisci optio eum eligendi suscipit dicta quam animi qui assumenda quo aliquam! A nam, magnam ab illum adipisci tenetur quos perferendis quam nemo unde numquam aspernatur animi fugit eveniet, minima aliquid voluptatem ipsam doloribus quas? Impedit temporibus illo eligendi accusamus assumenda.</p>
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h4>
+
+                <p style="margin-bottom: 10px;">Арт-терапия – это популярное направление в психологии, связанное с творчеством или художественной деятельностью.</p>
+
+                <p style="margin-bottom: 10px;">Основной целью арт-терапии является научить человека самопознанию, самовыражению, лучшему пониманию себя и своих желаний.</p>
+
+                <p style="margin-bottom: 10px;">Существует множество форм и видов этого лечебного искусства: живопись, графика, рисование, нейрографика, фототерапия, лепка, работа с глиной, скульптуротерапия, песочная терапия, музыкотерапия, актерское мастерство, танцевально-двигательная терапия, изотерапия, оригами, мандала, библиотерапия, стихосложение, сказкотерапия, цветотерапия и ряд других.</p>
+
+                <p style="margin-bottom: 3px;">Арт-терапия дает возможность для взрослых и детей:</p>
+                <p>&#9745; снять физическое напряжение и тревожность;</p>
+                <p>&#9745; развиваться, как личности;</p>
+                <p>&#9745; повышать самооценку;</p>
+                <p>&#9745; решить многие психологические проблемы;</p>
+                <p>&#9745; с гармонизировать эмоциональное состояние;</p>
+                <p>&#9745; проработать различные эмоции и страхи;</p>
+                <p>&#9745; социально адаптироваться;</p>
+                <p>&#9745; улучшить коммуникации;</p>
+                <p>&#9745; развивать гибкость мышления;</p>
+                <p style="margin-bottom: 10px;">&#9745; проявить свое творческое начало.</p>
+
+                <p style="margin-bottom: 10px;">Одно из направлений Арт-терапии мы используем в наших книгах.</p>
+                
             </div>
             
             <button class="modal__close">&#10006;</button>
         </div>
+    </div>
+
+    <!---
+    <div class="modals modal52">
+        <div class="modals__main">
+
+            <h2 class="modal__title">Для чего важно читать книги?</h2>
+            <div class="modal__container">
+                <h4 style="margin-bottom: 20px; color: gray">25 May, 2023</h4>
+
+                <p style="margin-bottom: 5px;">Чтение книг имеет огромное значение в жизни человека. В прошлом люди использовали книги для записи и сохранения важных идей и открытий, поэтому они являются ценным источником информации.</p>
+                <p style="margin-bottom: 5px;">Самая первая книга появилась около 5000 лет назад и была написана вручную на папирусе египтянами. Изначально книги были редкими и дорогими, доступными не каждому. С течением времени и развитием технологий процесс издания стал проще, и все больше людей могут позволить себе книги и наслаждаться чтением.</p>
+                <p style="margin-bottom: 5px;">Существует много причин, почему чтение книг является важной занятием. Если вы еще не начали читать, то после прочтения этой статьи вы, возможно, поймете, как много преимуществ оно может принести. Если вам трудно начать читать, попробуйте начать читать по несколько страниц в день.</p>
+                <p style="margin-bottom: 10px;">Даже 15 минут чтения в день помогут развить память и воображение, расширить словарный запас и повысить образованность.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение способствует получению знаний</h4>
+                <p style="margin-bottom: 10px;">Знания - это единственное, что никто никогда не сможет у Вас отнять. Поэтому всегда стоит стремиться к их приобретению, так как они обязательно пригодятся в жизни. Помимо школы, чтение книг является одним из способов получения новых знаний. Лучше изучать различные энциклопедии или книги по интересующим сферам. Однако много интересных фактов можно найти и в художественной литературе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развивает и мыслительные процессы</h4>
+                <p style="margin-bottom: 10px;">Чтение способствует формированию новых нейронных связей в мозгу как у взрослых, так и у детей, что помогает мыслить быстрее и улучшает память. Чтение действительно способствует улучшению памяти, так как требует запоминания событий в книге, а также запоминания имён персонажей, их характеристик и других деталей. Начав читать больше, вы заметите, что легко держите всю информацию в голове, включая самые мелкие детали. Чтение является отличным способом улучшения памяти, даже если вы не замечаете этого. Аудиокниги также оказывают положительное влияние на умственные процессы. Чтение книг также замедляет старение мозга.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развивает воображение и фантазию</h4>
+                <p style="margin-bottom: 10px;">Чтение художественной литературы помогает активизировать новые области мозга и развивает воображение, как показывают исследования Мичиганского университета. В отличие от компьютерных игр, чтение задействует эти области мозга.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение снижает стресс</h4>
+                <p style="margin-bottom: 10px;">В нашей жизни мы постоянно сталкиваемся со стрессовыми ситуациями. Проблемы на работе или в личной жизни могут вызывать чрезмерную тревогу и стресс. Существует несколько методов борьбы со стрессом, таких как физическая активность, достаточный сон и горячая ванна. Чтение книг также может помочь справиться со стрессом. Читая книги, вы можете отвлечься от проблем, которые возникли в течение дня. Найдите тихое место, где вас никто не будет беспокоить, чтобы сосредоточиться на чтении. Это поможет расслабиться и освободить разум от лишних мыслей. Подбирайте только те книги, которые вам нравится читать. Книга также способствует засыпанию быстрее, останавливая поток беспокойных мыслей.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение расширяет словарный запас</h4>
+                <p style="margin-bottom: 10px;">При чтении вы неосознанно запоминаете новые слова, которые затем используете в разговоре. Это также помогает вам улучшить грамотность и лучше понимать речь. Увеличение словарного запаса повышает вашу уверенность в себе и может помочь вам продвинуться по карьерной лестнице. Чем лучше вы можете выразить свои мысли, тем лучшее впечатление вы создаете о себе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение улучшает аналитические способности</h4>
+                <p style="margin-bottom: 10px;">Люди, которые регулярно читают, могут предсказывать и анализировать события в разных книгах. Чтение и отслеживание сюжетов развивает критическое мышление и аналитические навыки. Чем больше вы читаете, тем лучше ваш разум запоминает детали, которые помогают вам анализировать события в других книгах.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение улучшает навыки письма</h4>
+                <p style="margin-bottom: 10px;">Сегодня все больше людей общаются письменно через электронную почту или мобильные сообщения, поэтому развитие навыков письма очень важно. Умение писать тесно связано с развитием словарного запаса. Чем шире ваш словарный запас, тем легче будет выражать свои мысли в письменной форме. Поэтому чтение книг поможет вам в этом процессе.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение развитие эмпатии</h4>
+                <p style="margin-bottom: 10px;">При чтении книг люди вовлекаются в жизнь персонажей и их переживания. Иногда воображение настолько сильно, что вы можете почувствовать себя на месте главных героев. Чтение таких книг развивает эмпатию и помогает стать более терпимым к другим людям, а также прислушиваться к мнениям окружающих и помогать им в трудных ситуациях, если это необходимо.</p>
+
+                <h4 style="margin-bottom: 5px">Чтение способствует укреплению отношений</h4>
+                <p style="margin-bottom: 10px;">Чтение книг - отличный способ укрепить отношения между родителями и детьми. Личность ребенка формируется в самом раннем детстве, поэтому родителям важно уделять особое внимание своим детям. Если вы хотите, чтобы ваши отношения с ребенком были основаны на уважении, понимании и доверии, то необходимо найти занятия, которые помогут укрепить эти отношения. Чтение книг детям - один из таких способов. В магазинах есть много красивых и интересных книг для детей, среди которых вы обязательно найдете то, что понравится даже самым требовательным детям.</p>
+
+                <h4 style="margin-bottom: 5px">Сколько нужно читать в день?</h4>
+                <p style="margin-bottom: 5px;">Ученые рекомендуют читать 15-30 минут в день (20-30 страниц), уже за это время происходят заметные изменения в мозге. Однако каждый решает сам, сколько времени уделять чтению. Если вы можете уделить час в день на чтение, то эффективность будет только возрастать.</p>
+                <p style="margin-bottom: 10px;">В заключение, стоит отметить, что чтение книг имеет множество преимуществ. Чтение оказывает положительное воздействие на мозг. Для развития мыслительных процессов рекомендуется читать книги различных жанров, при условии, что они вызывают у вас интерес. Оно позволяет приобретать знания, развивать мыслительные процессы, воображение и фантазию, а также снижает уровень стресса. Не стоит стремиться побить рекорд и прочитать больше книг, так как быстрое и поверхностное чтение не принесет результатов. Мы надеемся, что хотя бы несколько причин, перечисленных выше, побудят вас включить чтение книг в вашу повседневную жизнь. Не упускайте возможность насладиться миром, открываемым через страницы книг.</p>
+            </div>
+            
+            <button class="modal__close">&#10006;</button>
+        </div>
+        -->
     </div>
 
     
