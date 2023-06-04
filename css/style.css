@@ -415,6 +415,8 @@ input[name="r"]{
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     padding: 30px;
+    padding-top: 120px;
+    padding-bottom: 30px;
     overflow-y: auto;
     display: none;
 }
