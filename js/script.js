@@ -72,15 +72,23 @@ ModalController({
     btnClose: '.modal__close'
 });
 
+
+
 ModalController({
-    modal: '.modal4',
-    btnOpen: '.selection__button4',
+    modal: '.modal50',
+    btnOpen: '.selection__button50',
     btnClose: '.modal__close'
 });
 
 ModalController({
-    modal: '.modal5',
-    btnOpen: '.selection__button5',
+    modal: '.modal51',
+    btnOpen: '.selection__button51',
+    btnClose: '.modal__close'
+});
+
+ModalController({
+    modal: '.modal52',
+    btnOpen: '.selection__button52',
     btnClose: '.modal__close'
 });
 
@@ -88,12 +96,14 @@ ModalController({
 //Scroll to Home
 var NewHomeElement = document.getElementById("home");
 var btntohome = document.querySelector(".btntohome");
+var btntotop = document.querySelector(".btntotop")
 
 function ScrollToHome(){
     NewHomeElement.scrollIntoView({display: "center", behavior: "smooth"});
 };
 
 btntohome.addEventListener('click', ScrollToHome);
+btntotop.addEventListener('click', ScrollToHome);
 
 //Scroll to Products
 var NewProductElement = document.getElementById("new-product");
@@ -116,3 +126,4 @@ function ScrollToBlog(){
 };
 
 btntoblog.addEventListener('click', ScrollToBlog);
+
