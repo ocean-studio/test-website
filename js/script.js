@@ -108,14 +108,14 @@ btntotop.addEventListener('click', ScrollToHome);
 //Scroll to Products
 var NewProductElement = document.getElementById("new-product");
 var btntoprod = document.querySelector(".btntoprod");
-var btntoprod2 = document.querySelector('.btntoprod2')
+//var btntoprod2 = document.querySelector('.btntoprod2')
 
 function ScrollToProducts(){
     NewProductElement.scrollIntoView({display: "center", behavior: "smooth"});
 };
 
 btntoprod.addEventListener('click', ScrollToProducts);
-btntoprod2.addEventListener('click', ScrollToProducts);
+//btntoprod2.addEventListener('click', ScrollToProducts);
 
 //Scroll to Blogs
 var NewBlogElement = document.getElementById("blog");
