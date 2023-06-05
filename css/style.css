@@ -504,17 +504,20 @@ article img{
 #switch3:checked ~ #controls label:nth-child(2){
     background: url('../img/shevron-prev.png') no-repeat;
     float: left;
+    background-size: 100%;
     margin: 0 0 0 -84px;
     display: block;
     height: 68px;
     width: 68px;
 }
 
+
 #switch1:checked ~ #controls label:nth-child(2),
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(1){
     background: url('../img/shevron-next.png') no-repeat;
     float: right;
+    background-size: 100%;
     margin: 0 -84px 0 0;
     display: block;
     height: 68px;
@@ -596,6 +599,31 @@ label, a{
     #desktop:checked ~ #slider{
         max-width: 960px;
     }
+
+    #switch1:checked ~ #controls label:nth-child(3),
+    #switch2:checked ~ #controls label:nth-child(1),
+    #switch3:checked ~ #controls label:nth-child(2){
+        background: url('../img/shevron-prev.png') no-repeat;
+        float: left;
+        background-size: 100%;
+        margin: 0 0 0 -84px;
+        display: block;
+        height: 68px;
+        width: 68px;
+    }
+
+
+    #switch1:checked ~ #controls label:nth-child(2),
+    #switch2:checked ~ #controls label:nth-child(3),
+    #switch3:checked ~ #controls label:nth-child(1){
+        background: url('../img/shevron-next.png') no-repeat;
+        float: right;
+        background-size: 100%;
+        margin: 0 -84px 0 0;
+        display: block;
+        height: 68px;
+        width: 68px;
+    }
 }
 
 @media (max-width: 920px){
@@ -641,6 +669,31 @@ label, a{
 
     #desktop:checked ~ #slider{
         max-width: 720px;
+    }
+
+    #switch1:checked ~ #controls label:nth-child(3),
+    #switch2:checked ~ #controls label:nth-child(1),
+    #switch3:checked ~ #controls label:nth-child(2){
+        background: url('../img/shevron-prev.png') no-repeat;
+        float: left;
+        background-size: 75%;
+        margin: 0 0 0 -84px;
+        display: block;
+        height: 68px;
+        width: 68px;
+    }
+
+
+    #switch1:checked ~ #controls label:nth-child(2),
+    #switch2:checked ~ #controls label:nth-child(3),
+    #switch3:checked ~ #controls label:nth-child(1){
+        background: url('../img/shevron-next.png') no-repeat;
+        float: right;
+        background-size: 75%;
+        margin: 0 -84px 0 0;
+        display: block;
+        height: 68px;
+        width: 68px;
     }
 }
 
